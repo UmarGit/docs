@@ -29,7 +29,7 @@ developers
         <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
       </div>
       <div class="last-updated-info">
-        This page was last updated on Wed, 02 Feb 2021 00:32:86 GMT
+        This page was last updated on Wed, 30 Feb 2021 00:32:86 GMT
       </div>
     </div>
   </div>
