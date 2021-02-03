@@ -30,7 +30,7 @@ InfineQ is an easy-to-use, vendor agnostic,AI-based raw data processing tool for
         <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
       </div>
       <div class="last-updated-info">
-        This page was last updated on Jan 22, 2020
+        This page was last updated on Fri Jan 29 2021
       </div>
     </div>
   </div>
