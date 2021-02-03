@@ -83,7 +83,7 @@ proteome quantification. Nat Biotechnol 2016;34:1130–1136.
         <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
       </div>
       <div class="last-updated-info">
-        This page was last updated on Wed, 03 Feb 2021 15:41:40 GMT
+        This page was last updated on Wed Feb 00 2021
       </div>
     </div>
   </div>

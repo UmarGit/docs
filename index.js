@@ -32,7 +32,7 @@ const main = () => {
 
           const start = index + 30
 
-          const end = index + 59
+          const end = index + 45
 
           var options = {
             host: 'api.github.com',
@@ -49,7 +49,7 @@ const main = () => {
             });
 
             resp.on('end', () => {
-              var date = new Date(JSON.parse(data)[0]['commit']['committer']['date']).toGMTString()
+              var date = new Date(JSON.parse(data)[0]['commit']['committer']['date']).toDateString()
               let UpdateCommitDate = CommitFile.slice(start, end)
               CommitFile = CommitFile.replace(UpdateCommitDate, date);
               fs.writeFileSync(base + "/" + chapter + "/" + list + "/" + file, CommitFile)
@@ -66,4 +66,4 @@ const main = () => {
 
 main()
 
-fs.writeFileSync("./docs/_sidebar.md", SideBar_Template);
+// fs.writeFileSync("./docs/_sidebar.md", SideBar_Template);
