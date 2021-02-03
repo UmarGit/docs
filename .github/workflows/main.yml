@@ -1,6 +1,6 @@
 name: Continous Integration and Development
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   stuff:
@@ -26,3 +26,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "gh-pages"  
