@@ -45,19 +45,34 @@
       },
       plugins: [
         function (hook, vm) {
-          hook.doneEach(function () {
+          hook.doneEach( () => {
             let element = document.querySelectorAll('.docsify-pagination-container');
               let target = document.querySelectorAll('article');
               let pageNotFound = document.querySelectorAll('.not-found');
               element.forEach((ele)=>{
-                console.log(target[0].clientHeight, window.innerHeight/1.2);
                 if (target[0].clientHeight < window.innerHeight/1.2) {
                   pageNotFound.length > 0 ? ele.style.display = 'none' : '';
                   ele.classList.add('bottom-navigation');
                 }
               })
           }),
-          hook.afterEach(function (html) {
+          hook.doneEach( () => {
+            let toc_elements = document.getElementsByTagName('h3');
+            let toc_container = document.getElementById('toc-container');
+
+            let current_page = window.location.href.split("/#/")[1];
+
+            for (let index = 0; index < toc_elements.length; index++) {
+              let toc_link = document.createElement('a');
+
+              toc_link.href = "#/" + current_page + "?id=" + toc_elements[index].id + ""
+
+              toc_link.text = toc_elements[index].id
+
+              toc_container.appendChild(toc_link)
+            }
+          }),
+          hook.afterEach( (html) => {
             
             setTimeout(()=>{
               let section = document.getElementById('faq-section');

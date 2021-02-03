@@ -1,32 +1,21 @@
-<!-- docs/_sidebar.md -->
-- Getting started
+<!-- AUTOMATIC SIDEBAR GENERATED -->
+- Getting Started
 
-  - <span>Quick start</span>
-    - [Initialize](/)
-    - [Writing content](quickstart.md)
-    - [Preview your site](preview-your-site.md)
-    - [Manual initialiation](manual-initialiation.md)
-    - [Loading dialog](loading-dialog.md)
-  - [Writing more pages](writing-more-pages.md)
-  - <span>Custom navbar</span>
-    - [More Nested Pages](more-nested-4.md)
-  - [Cover page](cover-page.md)
+  - <span>Quick Start</span>
+      - [initialize](/chapters/$a_Getting-Started/$a_Quick-Start/initialize.md)
+      - [preview your site](/chapters/$a_Getting-Started/$a_Quick-Start/preview-your-site.md)
+  - <span>Writing More Pages</span>
+  - <span>Custom Navbar</span>
+      - [more nested](/chapters/$a_Getting-Started/$c_Custom-Navbar/more-nested.md)
+  - <span>Cover Page</span>
 - Customization
 
-  - [Customization](customization.md)
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
+  - <span>Customization</span>
+      - [customization](/chapters/$b_Customization/$a_Customization/customization.md)
+  - <span>Configuration</span>
 - Guide
 
-  - [Deploy](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
-  - [CDN](cdn.md)
-  - [Offline Mode(PWA)](pwa.md)
-  - [Server-Side Rendering(SSR)](ssr.md)
-  - [Embed Files](embed-files.md)
-- Awesome docsify
+  - <span>Deploy</span>
+  - <span>Helpers</span>
+- Awesome Docsify
+

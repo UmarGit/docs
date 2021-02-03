@@ -11,17 +11,12 @@
           </div>
         </div>
         <div>
-          <div class="toc-items">
-            <a href="#/quickstart?id=getting-started">Getting started</a>
-            <a href="#/quickstart?id=types-of-proteomics">Types of proteomics</a>
-            <a href="#/quickstart?id=types-of-proteomics-1">Types of proteomics</a>
-            <a href="#/quickstart?id=shell-code">Shell code</a>
-          </div>
+          <div id="toc-container" class="toc-items"></div>
         </div>
       </div>
     </nav>
   </div>
-<div>
+  <div>
 
 ### Getting Started
 
@@ -88,7 +83,7 @@ proteome quantification. Nat Biotechnol 2016;34:1130–1136.
         <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
       </div>
       <div class="last-updated-info">
-        This page was last updated on Jan 22, 2020
+        This page was last updated on Wed, 03 Feb 2021 00:32:56 GMT
       </div>
     </div>
   </div>

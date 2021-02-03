@@ -18,19 +18,18 @@
   </div>
   <div>
 
-### InfineQ
+### Preview Your Site
 
-> InfineQ will transform your research. Please reach out and we will be happy to show you how
+The consistent and accurate quantification of proteins bymass spectrometry (MS)-based (1) proteomics depends on the
+performance of instruments, acquisition methods and data analysis software. In collaboration with the software
+developers
 
-### Advanced Proteomics, Powered by AI
-
-InfineQ is an easy-to-use, vendor agnostic,AI-based raw data processing tool for LC-MS/MS proteomics, supporting MS-DIA methods. Perfect for high-throughput proteomics, it features the most advanced published algorithm and delivers excellent data even in complex, short DIA runs. Scalable to studies of any size.
-    <div class="flex-center last-updated">
+  <div class="flex-center last-updated">
       <div>
         <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
       </div>
       <div class="last-updated-info">
-        This page was last updated on Jan 22, 2020
+        This page was last updated on Wed, 02 Feb 2021 00:32:86 GMT
       </div>
     </div>
   </div>
