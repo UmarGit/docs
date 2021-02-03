@@ -8,24 +8,24 @@ var SideBar_Template = ""
 
 const main = () => {
 
-  SideBar_Template += "<!-- AUTOMATIC SIDEBAR GENERATED -->\n"
+  SideBar_Template += "<!-- docs/_sidebar.md -->\n"
 
   fs.readdirSync(base).forEach(chapter => {
 
-    chapterformat = "- " + chapter.slice(3, chapter.length).replace(/-/g, " ") + "\n\n"
+    chapterformat = "- " + chapter.slice(2, chapter.length).replace(/-/g, " ") + "\n\n"
     SideBar_Template += chapterformat
 
     fs.readdirSync(base + "/" + chapter).forEach(list => {
 
       if(!list.includes('.txt')){
-        listformat = "  - <span>" + list.slice(3, list.length).replace(/-/g, " ") + "</span>" + "\n"
+        listformat = "  - <span>" + list.slice(2, list.length).replace(/-/g, " ") + "</span>" + "\n"
         SideBar_Template += listformat
   
         fs.readdirSync(base + "/" + chapter + "/" + list).forEach(file => {
   
           
           if (file.endsWith(".md") && !file.includes('.txt')) {
-            fileformat = "      - [" + file.replace(/-/g, " ").replace(/.md/g, "") + "](/chapters/" + chapter + "/" + list + "/" + file + ")" + "\n"
+            fileformat = "    - [" + file.replace(/-/g, " ").replace(/.md/g, "") + "](/chapters/" + chapter + "/" + list + "/" + file + ")" + "\n"
             SideBar_Template += fileformat
             let CommitFile = fs.readFileSync(base + "/" + chapter + "/" + list + "/" + file).toString('utf-8')
   
@@ -38,7 +38,7 @@ const main = () => {
     
               var options = {
                 host: 'api.github.com',
-                path: "/repos/UmarGit/docs/commits?path=docs/chapters" + "/" + chapter.replace('$', '%24') + "/" + list.replace('$', '%24') + "/" + file + "&page=1&per_page=1&sha=ed30a9473fa71a6aec9f2618db3989ea55cd7da5",
+                path: "/repos/UmarGit/docs/commits?path=docs/chapters" + "/" + chapter + "/" + list + "/" + file + "&page=1&per_page=1&sha=ed30a9473fa71a6aec9f2618db3989ea55cd7da5",
                 method: 'GET',
                 headers: { 'user-agent': 'node.js' }
               };

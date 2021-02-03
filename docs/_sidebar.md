@@ -1,17 +1,17 @@
-<!-- AUTOMATIC SIDEBAR GENERATED -->
+<!-- docs/_sidebar.md -->
 - Getting Started
 
   - <span>Quick Start</span>
-      - [initialize](/chapters/$a_Getting-Started/$a_Quick-Start/initialize.md)
-      - [preview your site](/chapters/$a_Getting-Started/$a_Quick-Start/preview-your-site.md)
+    - [initialize](/chapters/a_Getting-Started/a_Quick-Start/initialize.md)
+    - [preview your site](/chapters/a_Getting-Started/a_Quick-Start/preview-your-site.md)
   - <span>Writing More Pages</span>
   - <span>Custom Navbar</span>
-      - [more nested](/chapters/$a_Getting-Started/$c_Custom-Navbar/more-nested.md)
+    - [more nested](/chapters/a_Getting-Started/c_Custom-Navbar/more-nested.md)
   - <span>Cover Page</span>
 - Customization
 
   - <span>Customization</span>
-      - [customization](/chapters/$b_Customization/$a_Customization/customization.md)
+    - [customization](/chapters/b_Customization/a_Customization/customization.md)
   - <span>Configuration</span>
 - Guide
 
