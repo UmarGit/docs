@@ -186,6 +186,16 @@ ul{
   margin: 2px 0;
 }
 
+.sidebar span {
+  color: #505d6b;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .sidebar>h1 {
   font-size: 24px;
   font-weight: 900;
@@ -206,11 +216,6 @@ ul{
 }
 
 /* SIDE BAR CSS */
-
-.app-name{
-  padding-left: 15px;
-}
-
 .sidebar-toggle{
   background-color: white !important;
 }
