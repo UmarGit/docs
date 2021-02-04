@@ -4,6 +4,8 @@ const https = require('https');
 
 const base = "./docs/chapters"
 
+const OrgName = "UmarGit"
+
 var SideBar_Template = ""
 
 const main = () => {
