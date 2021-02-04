@@ -4,7 +4,7 @@ const https = require('https');
 
 const base = "./docs/chapters"
 
-const OrgName = "UmarGit"
+const OrgName = "infineq"
 
 var SideBar_Template = ""
 

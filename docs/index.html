@@ -55,8 +55,26 @@
                   ele.classList.add('bottom-navigation');
                 }
               })
-          }),
-          hook.doneEach( () => {
+            let toc = document.getElementById('stick-toc');
+            toc.innerHTML = `
+              <nav>
+                <div class="table-of-contents">
+                  <div class="flex-center">
+                    <div>
+                      <img src="./assets/media/Vector.svg" width="11" height="9.95" alt="burger">
+                    </div>
+                    <div class="heading">
+                      TABLE OF CONTENTS
+                    </div>
+                  </div>
+                  <div>
+                    <div id="toc-container" class="toc-items"></div>
+                  </div>
+                </div>
+              </nav>
+            `;
+
+
             let toc_elements = document.getElementsByTagName('h3');
             let toc_container = document.getElementById('toc-container');
 
@@ -75,18 +93,17 @@
           hook.afterEach( (html) => {
             
             setTimeout(()=>{
-              let section = document.getElementById('faq-section');
-            
-              let element = `
+
+              let mainSection = document.getElementsByClassName('main-header')[0]
+              
+              mainSection.insertAdjacentHTML('afterend', `
                     <div class="faq flex-center">
                       <div>
                         <span>Questions?</span>
                         <a href="https://infineq.com/#request-access"  target="_blank" rel="noopener noreferrer">Contact us.</a>
                       </div>
                     </div>
-              `;
-
-              section.insertAdjacentHTML('afterEnd', element);
+              `)
               
               setTimeout(()=>{
                 let element = document.querySelectorAll('.faq');
